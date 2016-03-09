@@ -1,0 +1,78 @@
+<h1>Welcome!</h1>
+<h2>Create Your Account</h2>
+
+<%= form_for :user, url: users_path do |f| %>
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %><br>
+  </p>
+
+  <p>
+    <%= f.label :bio %><br>
+    <%= f.text_field :bio %><br>
+  </p>
+  <p>
+    <%= f.label :zip %><br>
+    <%= f.text_field :zip %><br>
+  </p>
+  <h3>Languages</h3>
+  <p>
+    <%= f.label :javascript %><br>
+    <%= f.check_box :javascript %><br>
+  </p>
+  <p>
+    <%= f.label :ruby %><br>
+    <%= f.check_box :ruby %><br>
+  </p>
+  <p>
+    <%= f.label :php %><br>
+    <%= f.check_box :php %><br>
+  </p>
+  <p>
+    <%= f.label :html %><br>
+    <%= f.check_box :html %><br>
+  </p>
+  <p>
+    <%= f.label :css %><br>
+    <%= f.check_box :css %><br>
+  </p>
+    <p>
+    <%= f.label :html5 %><br>
+    <%= f.check_box :html5 %><br>
+  </p>
+
+  <h3>Frameworks</h3>
+  <p>
+    <%= f.label :rails %><br>
+    <%= f.check_box :rails %><br>
+  </p>
+  <p>
+    <%= f.label :sinatra %><br>
+    <%= f.check_box :sinatra %><br>
+  </p>
+  <p>
+    <%= f.label :bootstrap %><br>
+    <%= f.check_box :bootstrap %><br>
+  </p>
+  <p>
+    <%= f.label :angular %><br>
+    <%= f.check_box :angular %><br>
+  </p>
+    <p>
+    <%= f.label :node %><br>
+    <%= f.check_box :node %><br>
+  </p>
+  <p>
+    <%= f.label :sass %><br>
+    <%= f.check_box :sass %><br>
+  </p>
+  <p>
+    <%= f.label :less %><br>
+    <%= f.check_box :less %><br>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
