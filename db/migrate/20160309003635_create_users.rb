@@ -3,6 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :username
       t.text :bio
+      t.text :city
       t.integer :zip
       t.boolean :javascript
       t.boolean :ruby
